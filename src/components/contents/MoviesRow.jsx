@@ -112,6 +112,7 @@ const MoviesRow = (props) => {
                 </div>
               );
             }
+            return null;
           })}
       </MoviesSlider>
       <div

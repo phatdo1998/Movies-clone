@@ -5,16 +5,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 import { getSearchMovies, setMoviesDetail } from "../redux/store/actions";
 
-// const moviesList = [
-//   "https://thegioiinnhanh.com/upload/tiny/10_Mu_Poster_Cinema_p_6.png",
-//   "https://thegioiinnhanh.com/upload/tiny/10_Mu_Poster_Cinema_p_2.png",
-//   "https://bloganchoi.com/wp-content/uploads/2020/10/phim-viet-chieu-rap-2020-5.jpg",
-//   "https://bloganchoi.com/wp-content/uploads/2020/10/phim-viet-chieu-rap-2020-15-1.jpg",
-//   "https://www.elle.vn/wp-content/uploads/2019/07/28/poster-phim-loi-thoat-tren-khong.jpg",
-//   "https://thegioiinnhanh.com/upload/tiny/10_Mu_Poster_Cinema_p_5.png",
-//   "https://i.pinimg.com/550x/e5/75/6d/e5756d6fcd099ce79ad560ecc3ecfb59.jpg",
-// ];
-
 const SearchMovies = () => {
   const useQuery = () => new URLSearchParams(useLocation().search);
   const windownWidth = useViewPort();
@@ -61,6 +51,7 @@ const SearchMovies = () => {
                 </div>
               );
             }
+            return null;
           })}
         </div>
       ) : (
